@@ -1,0 +1,59 @@
+body, .background {
+    background-color: #f9fafb; /* Light gray for a clean look */
+    color: #1f2937; /* Dark gray for text contrast */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007BFF; /* Change title color to ocean blue */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+input {
+    background-color: #ffffff; /* White background for input */
+    border: 2px solid #d1d5db; /* Light gray border */
+    color: #1f2937; /* Dark gray text for input */
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+button {
+    background-color: #007BFF; /* Consistent accent blue */
+    color: #ffffff; /* White text for button */
+    padding: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+p {
+    color: #4b5563; /* Gray for info text */
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid > div {
+    background-color: #ffffff; /* White background for product cards */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #1f2937; /* Dark gray text for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.text-red-500 {
+    color: #ef4444; /* Brighter red for error messages */
+}
