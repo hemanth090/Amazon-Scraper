@@ -16,7 +16,7 @@ This application allows users to search for Amazon products based on a query and
 ## Prerequisites
 
 - **Frontend**: Node.js and npm installed
-- **Backend**: Python 3.x, Flask, and required dependencies installed
+- **Backend**: Python , Flask, and required dependencies installed
 
 ## Setup and Installation
 
