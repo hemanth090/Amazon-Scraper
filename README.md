@@ -1,6 +1,8 @@
 
 # Amazon Scraper
 
+![image](https://github.com/user-attachments/assets/3e63c960-76e4-4351-a58f-c59b5d695320)
+
 An Amazon Scraper web application built with a frontend using Tailwind CSS and React, and a backend powered by Python. This tool allows users to scrape product details from Amazon, enabling data analysis or gathering insights.
 
 ## Table of Contents
