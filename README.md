@@ -1,75 +1,94 @@
-# Amazon Product Scraper
 
-This application allows users to search for Amazon products based on a query and displays key product information including title, price, rating, review count, and availability. It consists of a frontend built in React and a backend using Flask for data scraping from Amazon.
+# Amazon Scraper
+
+An Amazon Scraper web application built with a frontend using Tailwind CSS and React, and a backend powered by Python. This tool allows users to scrape product details from Amazon, enabling data analysis or gathering insights.
+
+## Table of Contents
+
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
 ## Features
 
-- **Product Search:** Search Amazon for products by keyword.
-- **Data Scraping:** Extracts product details from Amazon such as title, price, rating, review count, and availability.
-- **Downloadable Data:** Exports scraped data as a CSV file.
+- Scrapes Amazon product data
+- Responsive frontend UI
+- Real-time data fetching and display
+- Easy-to-install and customizable
 
 ## Project Structure
 
-- `frontend/`: Contains the React frontend code.
-- `backend/`: Contains the Flask API for web scraping.
+### Frontend
 
-## Prerequisites
-
-- **Frontend**: Node.js and npm installed
-- **Backend**: Python , Flask, and required dependencies installed
-
-## Setup and Installation
+- **package.json**: Lists the frontend dependencies.
+- **tailwind.config.js** & **postcss.config.js**: Configuration files for styling with Tailwind CSS.
+- **src/**: Contains the main React components and pages for the application.
 
 ### Backend
 
-1. **Clone the repository**:
-    ```bash
-    git clone <repo-url>
-    cd backend
-    ```
+- **app.py**: Contains the main backend logic for scraping Amazon data.
+- **requirements.txt**: Lists Python packages required for the backend.
 
-2. **Install Python dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+## Setup
 
-3. **Run the Flask server**:
-    ```bash
-    python app.py
-    ```
-   The backend will run at `http://localhost:5000`.
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) and npm for the frontend
+- [Python 3](https://www.python.org/) for the backend
 
 ### Frontend
 
-1. **Navigate to the frontend directory**:
-    ```bash
-    cd frontend
-    ```
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the frontend server:
+   ```bash
+   npm start
+   ```
 
-2. **Install dependencies**:
-    ```bash
-    npm install
-    ```
+### Backend
 
-3. **Start the React app**:
-    ```bash
-    npm start
-    ```
-   The frontend will run at `http://localhost:3000`.
+1. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
+2. Set up a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the backend server:
+   ```bash
+   python app.py
+   ```
 
 ## Usage
 
-1. Enter a product keyword in the search bar and click "Search."
-2. View product details including title, price, rating, review count, and availability.
-3. Download the data as a CSV file by clicking the download link.
+1. Open your web browser and navigate to the frontend URL (usually `http://localhost:3000`).
+2. Enter the product URL or search term to scrape data.
+3. View and analyze the scraped data directly from the web interface.
 
 ## Technologies Used
 
 - **Frontend**: React, Tailwind CSS
-- **Backend**: Flask, BeautifulSoup, Pandas
-- **Data Scraping**: Requests, BeautifulSoup
+- **Backend**: Python, Flask (or another backend framework depending on app.py implementation)
+- **Other**: Node.js, npm, Virtual Environment (Python)
 
 ## License
 
 This project is licensed under the MIT License.
-
